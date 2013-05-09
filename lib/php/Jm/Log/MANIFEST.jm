@@ -1,0 +1,21 @@
+<?xml version="1.0">
+<jm_package>
+    <id>Jm_Log</id>
+    <description>Jm_Log is a event based log framework designed to be ease in use, have short call syntax an flexibility</description>
+    <version>0.1</version>
+    <author>
+        <name>Thorsten Heymann</name>
+        <email>info@metashock.net</email>
+    </author>
+    <files>
+        <file src="lib/php/Jm/Log.php" />
+        <file src="lib/php/Jm/Log/Event.php" />
+        <file src="lib/php/Jm/Log/Exception.php" />
+        <file src="lib/php/Jm/Log/Observer.php" />
+    <files>
+    <dependencies>
+        <jm_package id="Jm_Core" version="0.1" />
+        <jm_package id="Jm_Event" version="0.1" />
+    </dependencies>
+</jm_package>
+
