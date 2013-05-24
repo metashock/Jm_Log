@@ -59,7 +59,7 @@ if [ ! -f "$mydir/pear/Jm/Log" ] ; then
 fi
 
 echo -n "Cleanup build directory ..."
-rm -f "$mydir"/pear/*
+rm -rf "$mydir"/pear/*
 echo "done"
 
 echo -n "Copy files from checkout to build directory ... "
@@ -67,8 +67,8 @@ cp -a "$TEMPORARY_CHECKOUT"/lib/php/* "$mydir"/pear/
 cp -a "$TEMPORARY_CHECKOUT"/tests "$mydir"/pear/
 cp -a "$TEMPORARY_CHECKOUT"/examples "$mydir"/pear/
 
-mkdir -p "$mydir"/pear/doc/Jm/Configuration
-cp "$TEMPORARY_CHECKOUT"/README.md "$mydir"/pear/doc/Jm/Log
+mkdir -p "$mydir"/pear/doc/Jm/Log
+cp "$TEMPORARY_CHECKOUT"/README.md "$mydir"/pear/doc/Jm/Log/README.md
 echo "done"
 
 # remove temporary checkout

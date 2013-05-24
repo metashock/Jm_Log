@@ -27,37 +27,45 @@
  <contents>
   <dir name=".">
   <dir name="Jm">
-    <file name="Configuration.php" role="php" />
-    <file name="Configurable.php" role="php" />
-    <dir name="Configuration">
-      <file name="Array.php" role="php" />
-      <file name="Exception.php" role="php" />
-      <file name="InifileCorruptException.php" role="php" />
-      <file name="Inifile.php" role="php" />
-      <file name="KeyNotFoundException.php" role="php" />
+    <file name="Log.php" role="php" />
+    <dir name="Log">
+      <file name="ArrayObserver.php" role="php" />
+      <file name="ConsoleObserver.php" role="php" />
+      <file name="FileObserver.php" role="php" />
+      <file name="FirephpObserver.php" role="php" />
+      <file name="Level.php" role="php" />
+      <file name="Message.php" role="php" />
+      <file name="Observer.php" role="php" />
+      <file name="PdoObserver.php" role="php" />
+      <file name="SyslogObserver.php" role="php" />
     </dir>
   </dir>
   <dir name="examples">
     <dir name="Jm">
-      <dir name="Configuration">
-        <file name="example.array.php" role="doc" />
-        <file name="example.ini" role="doc" />
-        <file name="example.ini.php" role="doc" />
+      <dir name="Log">
+        <file name="usage.php" role="doc" />
+        <file name="usage2.php" role="doc" />
       </dir>
     </dir>
   </dir>
   <dir name="tests">
+    <file name="bootstrap.php" role="test" />
     <dir name="Jm">
-      <dir name="Configuration">
-        <file name="ArrayTest.php" role="test" />
-        <file name="InifileTest.php" role="test" />
+      <file name="LogTest.php" role="test" />
+      <dir name="Log">
+        <file name="ConsoleObserverTest.php" role="test" />
+        <file name="FileObserverTest.php" role="test" />
+        <file name="FirephpObserverTest.php" role="test" />
+        <file name="LevelTest.php" role="test" />
+        <file name="MessageTest.php" role="test" />
+        <file name="PdoObserverTest.php" role="test" />
+        <file name="SyslogObserverTest.php" role="test" />
       </dir>
     </dir>
   </dir>
-
   <dir name="doc">
     <dir name="Jm">
-      <dir name="Configuration">
+      <dir name="Log">
         <file name="README.md" role="doc" />
       </dir>
     </dir>
